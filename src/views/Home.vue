@@ -1,21 +1,15 @@
 <template>
   <div class="home">
-    <clicker :clicker-config="clickerConfig" />
+    <main-screen />
   </div>
 </template>
 
 <script setup lang="ts">
-import Clicker from "@/components/clicker/Clicker.vue";
-import { computed } from 'vue';
-import { useStore } from 'vuex';
-
-const store = useStore();
-const clickerConfig = computed(() => store.getters['clicker/getClicker']);
+import { MainScreen } from "@/components";
 </script>
 
 <style lang="scss" scoped>
 .home {
-  display: flex;
-  justify-content: center;
+  background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), 
 }
 </style>

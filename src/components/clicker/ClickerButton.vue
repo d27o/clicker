@@ -33,8 +33,13 @@ const props = defineProps({
   border: 0;
   cursor: pointer;
 
-  // TODO: add active styles
+  img {
+    pointer-events: none;
+    user-select: none;
+  }
+
   &:active {
+    transform: scale(2);
   }
 }
 </style>

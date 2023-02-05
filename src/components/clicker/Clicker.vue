@@ -5,6 +5,7 @@
       :background-config="clickerConfig.background"
     />
     <clicker-like-dislike-buttons
+      class="like-dislike-buttons"
       :like-dislike-buttons="clickerConfig.likeDislikeButtons"
       @like="likeHandler"
       @dislike="dislikeHandler"
@@ -45,9 +46,18 @@ const dislikeHandler = (): void => {
   padding: 20px;
   border: 1px solid;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
-  max-height: 300px;
-  max-width: 200px;
+  max-height: 400px;
+  max-width: 250px;
+
+  h1 {
+    text-align: center;
+  }
+
+  & .like-dislike-buttons {
+    margin-top: 30px;
+  }
 }
 </style>

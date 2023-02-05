@@ -16,23 +16,23 @@ const initClickerState: IClicker = {
   likeDislikeButtons: {
     like: {
       style: {
-        width: '25px',
-        height: '25px',
+        width: '50px',
+        height: '50px',
       },
       imgStyle: {
-        width: '25px',
-        height: '25px',
+        width: '50px',
+        height: '50px',
       },
       iconPath: 'clicker/icons/like.svg',
     },
     dislike: {
       style: {
-        width: '25px',
-        height: '25px',
+        width: '50px',
+        height: '50px',
       },
       imgStyle: {
-        width: '25px',
-        height: '25px',
+        width: '50px',
+        height: '50px',
       },
       iconPath: 'clicker/icons/dislike.svg',
     },
