@@ -1,7 +1,13 @@
 <template>
   <div class="like-dislike-buttons">
-    <clicker-button :buttonConfig="likeDislikeButtons.like" @click.prevent="click('like')"/>
-    <clicker-button :buttonConfig="likeDislikeButtons.dislike" @click.prevent="click('dislike')"/>
+    <clicker-button
+      :buttonConfig="likeDislikeButtons.dislike"
+      @click.prevent="click('dislike')"
+    />
+    <clicker-button
+      :buttonConfig="likeDislikeButtons.like"
+      @click.prevent="click('like')"
+    />
   </div>
 </template>
 
@@ -18,11 +24,10 @@ const props = defineProps({
   }
 });
 
-const emit = defineEmits(["like", "dislike"])
-
+const emit = defineEmits(["like", "dislike"]);
 const click = (action: string): void => {
   emit(action);
-}
+};
 </script>
 
 <style lang="scss" scoped>

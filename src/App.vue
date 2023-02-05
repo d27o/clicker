@@ -6,6 +6,15 @@
   <router-view/>
 </template>
 
+<script setup lang="ts">
+  // TODO: вынести в отдельный слой  
+  window.godmode = function(){
+    alert("Pretended to be a God?");
+    document.getElementsByTagName('html')[0].style.display = 'none';
+    alert("И в подарок тебе руки – создавай, твори");
+  };
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

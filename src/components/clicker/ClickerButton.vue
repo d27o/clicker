@@ -1,7 +1,14 @@
 <template>
-  <button :style="buttonConfig.style">
+  <button
+    class="clicker-button"
+    :style="buttonConfig.style"
+  >
+    <span v-if="buttonConfig.text">
+      {{ buttonConfig.text }}
+    </span>
     <img
-      v-if="buttonConfig.iconPath"
+      v-else
+      :style="buttonConfig.imgStyle"
       :src="require(`@/assets/${buttonConfig.iconPath}`)"
     >
   </button>
@@ -18,3 +25,16 @@ const props = defineProps({
   }
 });
 </script>
+
+<style lang="scss" scoped>
+.clicker-button {
+  background: inherit;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  // TODO: add active styles
+  &:active {
+  }
+}
+</style>

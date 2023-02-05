@@ -2,17 +2,18 @@ export interface IClicker {
   background: IClickerBackgroundConfig,
   size: IClickerSize,
   likeDislikeButtons: ILikeDislikeButtons,
+  points: number,
 }
 
 export interface IClickerSize {
-  width: Number,
-  height: Number,
+  width: number,
+  height: number,
 }
 
 export interface IClickerBackgroundConfig {
-  path: String,
-  width: Number,
-  height: Number,
+  path: string,
+  width: number,
+  height: number,
 }
 
 export interface ILikeDislikeButtons {
@@ -21,6 +22,16 @@ export interface ILikeDislikeButtons {
 }
 
 export interface IClickerButton {
-  style: Object,
-  iconPath?: String,
+  style: object,
+  imgStyle?: object,
+  iconPath?: string,
+  text?: string,
 }
+
+// VUEX begin
+
+export interface IClickerState {
+  clicker: IClicker,
+}
+
+// VUEX end

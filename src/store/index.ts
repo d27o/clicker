@@ -1,12 +1,8 @@
-import { createStore } from 'vuex'
+import { createStore, Store } from 'vuex'
+import { clicker } from './clicker.module'
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    clicker,
   }
 })
