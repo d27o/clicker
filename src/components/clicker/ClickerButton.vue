@@ -39,7 +39,7 @@ const props = defineProps({
   }
 
   &:active {
-    transform: scale(2);
+    transform: scale(1.5);
   }
 }
 </style>
