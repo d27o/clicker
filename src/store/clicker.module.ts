@@ -5,7 +5,7 @@ import {
 
 const initClickerState: IClicker = {
   background: {
-    path: 'clicker/backgrounds/test.gif',
+    path: 'clicker/backgrounds/pixeltube-girl.gif',
     width: 100,
     height: 100,
   },
