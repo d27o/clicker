@@ -6,8 +6,14 @@ npm install
 ```
 
 ### Compiles and hot-reloads for development
+
+#### for node js 16
 ```
 npm run serve
+```
+#### for node js 18
+```
+npm run serve18
 ```
 
 ### Compiles and minifies for production
