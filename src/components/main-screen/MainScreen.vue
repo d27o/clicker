@@ -4,7 +4,10 @@
       class="main-screen__clicker"
       :clicker-config="clickerConfig" 
     />
-    <bottom-menu class="main-screen__bottom-menu"/>
+    <bottom-menu 
+      class="main-screen__bottom-menu"
+      @click="callMenuWindow"
+    />
   </div>
 </template>
 
@@ -15,6 +18,10 @@ import { useStore } from 'vuex';
 
 const store = useStore();
 const clickerConfig = computed(() => store.getters['clicker/getClicker']);
+
+const callMenuWindow = (windowType: string): void => {
+  // TODO: add open modal windows
+}
 </script>
 
 <style lang="scss" scoped>

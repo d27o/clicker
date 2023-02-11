@@ -12,8 +12,12 @@
 import { IAppButton } from "@/interfaces";
 import { AppButton } from "@/components";
 
+import { defineEmits } from "vue";
+
+const emit = defineEmits(['click'])
+
 const commonButtonsStyle = {
-  color: 'red'
+  color: 'red',
 }
 
 const buttonsConfig: IAppButton[] = [
@@ -34,13 +38,13 @@ const buttonsConfig: IAppButton[] = [
 const clickMapper = (index: number): string => {
   const map = new Map();
   map.set(0, 'Level')
-  map.set(1, 'Upgrade')
-  map.set(2, 'Store')
+    .set(1, 'Upgrade')
+    .set(2, 'Store')
   return map.get(index);
 }
 
-const click = (index: number) => {
-  console.log('click ' + clickMapper(index)); 
+const click = (index: number): void => {
+  emit('click', clickMapper(index)) 
 }
 </script>
 
