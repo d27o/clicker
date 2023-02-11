@@ -49,9 +49,6 @@ const dislikeHandler = (): void => {
   justify-content: center;
   flex-direction: column;
 
-  max-height: 400px;
-  max-width: 250px;
-
   h1 {
     text-align: center;
   }

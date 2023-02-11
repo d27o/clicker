@@ -1,7 +1,10 @@
 <template>
   <div class="main-screen">
-    <clicker :clicker-config="clickerConfig" />
-    <bottom-menu />
+    <clicker 
+      class="main-screen__clicker"
+      :clicker-config="clickerConfig" 
+    />
+    <bottom-menu class="main-screen__bottom-menu"/>
   </div>
 </template>
 
@@ -17,8 +20,17 @@ const clickerConfig = computed(() => store.getters['clicker/getClicker']);
 <style lang="scss" scoped>
 .main-screen {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  &__clicker {
+    width: 200px;
+  }
+
+  &__bottom-menu {
+    margin-top: 20px;
+  }
 }
 </style>
