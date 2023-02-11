@@ -1,11 +1,12 @@
 <template>
   <div class="main-screen">
     <clicker :clicker-config="clickerConfig" />
+    <bottom-menu />
   </div>
 </template>
 
 <script setup lang="ts">
-import { Clicker } from "@/components";
+import { Clicker, BottomMenu } from "@/components";
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 

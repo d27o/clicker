@@ -10,6 +10,8 @@ import { MainScreen } from "@/components";
 
 <style lang="scss" scoped>
 .home {
-  background: linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)), 
+  background: linear-gradient(to right,
+    rgba(75, 123, 211, 0.5),
+    rgba(22, 215, 177, 0.3));
 }
 </style>

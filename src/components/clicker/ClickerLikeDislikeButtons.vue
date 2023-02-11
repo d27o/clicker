@@ -1,10 +1,10 @@
 <template>
   <div class="like-dislike-buttons">
-    <clicker-button
+    <app-button
       :buttonConfig="likeDislikeButtons.dislike"
       @click.prevent="click('dislike')"
     />
-    <clicker-button
+    <app-button
       :buttonConfig="likeDislikeButtons.like"
       @click.prevent="click('like')"
     />
@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import ClickerButton from './ClickerButton.vue';
+import { AppButton } from '@/components';
 
 import { defineProps, defineEmits } from 'vue';
 import { ILikeDislikeButtons } from '@/interfaces';

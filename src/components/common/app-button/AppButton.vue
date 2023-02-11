@@ -16,11 +16,11 @@
 
 <script setup lang="ts">
 import { defineProps } from 'vue';
-import { IClickerButton } from '@/interfaces';
+import { IAppButton } from '@/interfaces';
 
 const props = defineProps({
   buttonConfig: {
-    type: Object as () => IClickerButton,
+    type: Object as () => IAppButton,
     required: true,
   }
 });

@@ -17,11 +17,11 @@ export interface IClickerBackgroundConfig {
 }
 
 export interface ILikeDislikeButtons {
-  like?: IClickerButton,
-  dislike?: IClickerButton,
+  like?: IAppButton,
+  dislike?: IAppButton,
 }
 
-export interface IClickerButton {
+export interface IAppButton {
   style: object,
   imgStyle?: object,
   iconPath?: string,
