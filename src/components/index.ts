@@ -1,5 +1,6 @@
 // common components
-import { AppButton } from "./common/app-button"
+import { AppButton } from "./common/app-button";
+import { AppModal } from "./common/app-modal";
 
 import { Clicker } from "./clicker";
 import { MainScreen } from "./main-screen";
@@ -10,4 +11,5 @@ export {
   MainScreen,
   AppButton,
   BottomMenu,
+  AppModal,
 }

@@ -6,31 +6,27 @@
     />
     <bottom-menu 
       class="main-screen__bottom-menu"
-      @click="callMenuWindow"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-import { Clicker, BottomMenu } from "@/components";
+import { Clicker, BottomMenu, AppModal } from "@/components";
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 
 const store = useStore();
 const clickerConfig = computed(() => store.getters['clicker/getClicker']);
-
-const callMenuWindow = (windowType: string): void => {
-  // TODO: add open modal windows
-}
 </script>
 
 <style lang="scss" scoped>
 .main-screen {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  // height: 100vh;
 
   &__clicker {
     width: 200px;

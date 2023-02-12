@@ -33,6 +33,9 @@ const props = defineProps({
   border: 0;
   cursor: pointer;
 
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+
   img {
     pointer-events: none;
     user-select: none;
